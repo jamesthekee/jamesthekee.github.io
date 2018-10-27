@@ -4,8 +4,11 @@ I'm a computer science a vast interest in creating interesting computer stuff.
 You can find some of my projects here:
 
 [My Password manager](https://jamesthekee.github.io/keesecurity.md)
+
 [Project 2](https://jamesthekee.github.io/)
+
 [Project 3](https://jamesthekee.github.io/)
+
 
 
 ### Markdown
@@ -31,7 +34,6 @@ Syntax highlighted code block
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
 
 ### Contact Me
 
