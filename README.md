@@ -1,6 +1,6 @@
 ## Welcome to my page
 
-I'm a computer science student with an interest in creating computer stuff.
+I'm an undergraduate computer science student with an interest in creating computer stuff.
 You can find some of my projects here:
 
 [My Password manager](https://github.com/jamesthekee/password-manager)
