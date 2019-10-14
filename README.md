@@ -1,37 +1,10 @@
 ## Welcome to my page
 
-I'm an undergraduate computer science student with an interest in creating computer stuff.
-You can find some of my projects here:
+I'm an undergraduate computer science student with a broad interest in the Computer Science and Mathematics. Some of my projects are available here on github. Here they are:
+
 
 [My Password manager](https://github.com/jamesthekee/password-manager)
-
 [My Project Euler solutions](https://github.com/jamesthekee/project-euler)
-
-[Project 3](https://jamesthekee.github.io/)
-
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
