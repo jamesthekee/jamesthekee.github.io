@@ -1,6 +1,6 @@
 ## Welcome to my page
 
-I'm an undergraduate cs student with a broad interest in the Computer Science and Mathematics. Some of my projects are available here on github. Here they are:
+I'm a cs student. and i like computing and maths. some of my dirt projects are available. here they are:
 
 
 [My Password manager](https://github.com/jamesthekee/password-manager)
