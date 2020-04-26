@@ -14,5 +14,7 @@ here they are:
 
 [project euler](https://github.com/jamesthekee/project-euler)
 
+[quintballs](https://jamesthekee.github.io/quintballs/index.html)
+
 
 email me at jamesthekee@gmail.com
