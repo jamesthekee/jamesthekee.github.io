@@ -41,7 +41,7 @@ class board{
 	    this.player_turn = 1;
 	    this.game_state = 0;
 
-
+	    this.game_won = false;
 	    this.turn = 1;
 	    this.selected_amazon = [-1,-1];
 	}
@@ -102,7 +102,7 @@ class board{
 			else if(this.debug){
 				console.log("	", col, row, " is an invalid arrow")
 			}
-			this.wincheck();
+			this.gameEnded();
 		}
 		
 	}
@@ -137,31 +137,82 @@ class board{
 		return true;
 	}
 
+	gameEnded(){
+		if(this.wincheck()){
+			this.game_won = true;
+			console.log("Game has been won.");
+		}
+		console.log("Game hasn't been won.");
+	}
+
 	wincheck(){
 		for(var x=0; x<this.board_size; x++){
 			for(var y=0; y<this.board_size; y++){
-				if(this.board[x][y] == )
-			
+				if(this.board[x][y] == this.player_turn){
+					// Check all adjacent tiles
+					if(x!=0){
+						if(this.board[x-1][y] == 0)
+							return false;
+
+						if(y!=0){
+							if(this.board[x-1][y-1] == 0)
+								return false;
+						}
+
+						if(y!=this.board_size-1){
+							if(this.board[x-1][y+1] == 0)
+								return false;
+						}
+					}
+
+					if(x!=this.board_size-1){
+						if(this.board[x+1][y] == 0)
+							return false;
+
+						if(y!=0){
+							if(this.board[x+1][y-1] == 0)
+								return false;
+						}
+
+						if(y!=this.board_size-1){
+							if(this.board[x+1][y+1] == 0)
+								return false;
+						}
+					}
+
+					if(y!=0){
+						if(this.board[x][y-1] == 0)
+							return false;
+					}
+
+					if(y!=this.board_size-1){
+						if(this.board[x][y+1] == 0)
+							return false;
+					}
+				}
 			}
 		}
-
+		return true;
 	}
 
 	draw(){
 		background(this.background_color);
   		this.drawGUI();
+  		push();
   		this.drawBoard();
   		this.drawPieces();
+  		pop();
 	}
 
 	drawGUI(){
 		// show turn
 		textAlign(CENTER);
+		textSize(32);
 		if(this.player_turn == 1){
-		  	fill(0);
+		  	fill(255);
 		    text("White's turn", width/2, (height-this.board_width)/4);
 		}else{
-			fill(255);
+			fill(0);
 		    text("Black's turn", width/2, (height-this.board_width)/4);
 		}
 
@@ -169,6 +220,18 @@ class board{
 		textAlign(LEFT);
 		fill(0);
   		text("Turn " + this.turn, 20, (height-this.board_width)/4);
+
+  		if(this.game_won){
+  			textSize(64);
+  			textAlign(CENTER);
+  			if(this.player_turn == 1){
+  				fill(0);
+  				text("Black wins", width/2, (3*height + this.board_width)/4);
+  			}else{
+  				fill(255);
+  				text("White wins", width/2, (3*height + this.board_width)/4);  			
+  			}
+  		}
 	}
 
 	drawBoard(){
