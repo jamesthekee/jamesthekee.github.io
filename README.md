@@ -18,5 +18,7 @@ here they are:
 
 - [particle sim 2](https://jamesthekee.github.io/cursorGrav/index.html)
 
+- [Game of the Amazons](https://jamesthekee.github.io/amazons)
+
 
 email me at jamesthekee@gmail.com
