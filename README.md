@@ -1,7 +1,7 @@
 
 # m e
 
-https://media.giphy.com/media/KbvXCSALvCPiJ35jY8/giphy.gif
+![](https://media.giphy.com/media/KbvXCSALvCPiJ35jY8/giphy.gif)
 
 im a cs student. 
 
