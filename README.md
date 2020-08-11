@@ -1,8 +1,7 @@
 
 # m e
 
-![](https://media.giphy.com/media/KbvXCSALvCPiJ35jY8/giphy.gif)
-
+<img align="right" width="100" height="100" src="https://media.giphy.com/media/KbvXCSALvCPiJ35jY8/giphy.gif">
 im a cs student. 
 
 and i like computing and maths. 
