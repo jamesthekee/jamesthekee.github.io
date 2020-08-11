@@ -1,6 +1,8 @@
 
 # m e
 
+https://media.giphy.com/media/KbvXCSALvCPiJ35jY8/giphy.gif
+
 im a cs student. 
 
 and i like computing and maths. 
