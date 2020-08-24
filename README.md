@@ -2,7 +2,7 @@
 # m e
 
 <img align="right" width="400" height="400" src="https://media.giphy.com/media/KbvXCSALvCPiJ35jY8/giphy.gif">
-im a cs student. 
+im a cs student and paint3D extraordinaire
 
 and i like computing and maths. 
 
