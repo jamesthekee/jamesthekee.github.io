@@ -1,23 +1,21 @@
 
-# m e
+# me
 
-<img align="right" width="400" height="400" src="https://media.giphy.com/media/KbvXCSALvCPiJ35jY8/giphy.gif">
 im a cs student and paint3D extraordinaire
 
 and i like computing and maths. 
 
-some of my dirt projects are available. 
+some of my projects are here. 
 
 here they are:
 
-
-- [password manager](https://github.com/jamesthekee/password-manager)
+- [centralised password manager](https://github.com/jamesthekee/password-manager)
 
 - [project euler](https://github.com/jamesthekee/project-euler)
 
 - [particle sim 1](https://jamesthekee.github.io/quintballs/index.html)
 
-- [particle sim 2](https://jamesthekee.github.io/cursorGrav/index.html)
+- [pretty gravity sim](https://jamesthekee.github.io/cursorGrav/index.html)
 
 - [Game of the Amazons](https://jamesthekee.github.io/amazons)
 
