@@ -1,9 +1,8 @@
 
 # me
 
-im a cs student and paint3D extraordinaire
-
-and i like computing and maths. 
+hello i am james
+i am a cs graduate
 
 some of my projects are here. 
 
