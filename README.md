@@ -2,7 +2,8 @@
 # me
 
 hello i am james
-i am a cs graduate
+i am a cs graduate and a bit of a
+mathematicaster
 
 some of my projects are here. 
 
