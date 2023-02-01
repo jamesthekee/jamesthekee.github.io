@@ -1,14 +1,14 @@
 
-# Example title
+# welcome to my page
 
 hello i am james.
-i am a computer science graduate from the UK. i like computers and maths
+i am a computer science graduate from the UK. i like computers and maths and the universe and worms
 
 here are some of my projects
 
 - [centralised password manager](https://github.com/jamesthekee/password-manager)
 - [This website](https://github.com/jamesthekee/jamesthekee.github.io)
-- [Singleplayer mathdoku game](https://github.com/jamesthekee/Mathdoku)
+- [Mathdoku game](https://github.com/jamesthekee/Mathdoku)
 
 Here are some interactive simulations/ games I have made and hosted on this website.
 
