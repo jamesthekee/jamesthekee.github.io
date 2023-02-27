@@ -2,7 +2,7 @@
 # welcome to my page
 
 hello i am james.
-i am a computer science graduate from the UK. i like computers and maths and the universe and worms
+i am a CS graduate from the UK. i like computers and maths and the universe and worms
 
 here are some of my projects
 
