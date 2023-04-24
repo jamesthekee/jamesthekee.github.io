@@ -1,5 +1,6 @@
 ---
 title: Posts
+layout: default
 ---
 
 ## Latest Posts
