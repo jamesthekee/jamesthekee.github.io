@@ -1,0 +1,4 @@
+<a id="project_title" href="/">{{ site.title | escape }}</a>
+{% for item in site.data.navigation %}
+  <a id="headers" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+{% endfor %}
