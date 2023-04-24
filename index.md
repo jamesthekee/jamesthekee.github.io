@@ -5,12 +5,6 @@
 layout: default
 ---
 
-<<<<<<< Updated upstream
-hello i am james.
-i am a CS graduate from the UK. i like computers and maths and the universe and worms
-=======
->>>>>>> Stashed changes
-
 ## Welcome to my page
 
 Hello I am james, I'm from the UK and I like creating stuff. I'm interested in <ins>simulations</ins>, <ins>machine learning</ins>, <ins>nlp</ins> hopefully I will add some more stuff about that on here in the coming future. 
