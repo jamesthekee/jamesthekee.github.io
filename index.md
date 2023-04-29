@@ -7,9 +7,9 @@ layout: default
 
 ## Welcome to my page
 
-Hello I am james, I'm from the UK and I like creating stuff. I'm interested in <ins>simulations</ins>, <ins>machine learning</ins>, <ins>nlp</ins> hopefully I will add some more stuff about that on here in the coming future. 
+Hello I am James, I'm from the UK and I like creating stuff. I'm interested in <ins>simulations</ins>, <ins>machine learning</ins>, <ins>nlp</ins>. Hopefully I will add some more stuff about that on here in the coming future. 
 
-Some of the stuff I've made in the past is here:
+Some of my github projects are here:
 
 - [Centralised password manager](https://github.com/jamesthekee/password-manager)
 - [This website](https://github.com/jamesthekee/jamesthekee.github.io)
@@ -21,7 +21,7 @@ Click on any of these to play around
 
 - [Particle sim (similar to Particle life)](interactive/quintballs)
 - [Pretty gravity sim](interactive/cursorGrav)
-- [Game of the Amazons](interactive/amazon/)
+- [Game of the Amazons](interactive/amazons/)
 - [Unigram frequency game](interactive/unigram)
 
 ##   Contact me
