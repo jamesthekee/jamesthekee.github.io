@@ -10,8 +10,7 @@ layout: default
     {% if post.draft == false %}
       <div class="post-info">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <div class="post-tags">{{post.tags | join: ", "}}</div>
-        
+        <p class="post-date">{{ post.date || date_to_string }}</p>
       </div>
     {% endif %}
   {% endfor %}
