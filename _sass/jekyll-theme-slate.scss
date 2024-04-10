@@ -110,7 +110,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #0F79D0;
+  color: #8a2a2a;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -287,6 +287,7 @@ kbd {
   flex-direction: row;
   align-items: baseline; /* align title and tags at the same baseline */
   justify-content: space-between;
+  margin-top:-15px;
 }
 
 .post-tags, .post-date {
@@ -365,6 +366,7 @@ Full-Width Styles
 
 #main_content {
   padding-top: 40px;
+  min-height: 500px;
 }
 
 #footer_wrap {
