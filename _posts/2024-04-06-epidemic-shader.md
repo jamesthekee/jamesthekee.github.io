@@ -12,7 +12,7 @@ I've been spending more and more time into shaders in these last months, and rec
 
 ## SIR
 
-The very foundations of the model, is an SIR simulation. What this means is that any agent in the simulation can be either of 3 states: susceptible (S), infected (I) and recovered (R), hence the name SIR. Susceptible agents can be infected, infected agents can infect other susceptibles and those recovered are immune to the infection. The agents are geographically situated on a 2d grid and we consider two cells neighbours if they differ in by 1 in the x or y coordinate. So each cell has eight neighbours. 
+The very foundations of the model, is an SIR simulation. What this means is that any agent in the simulation can be either of 3 states: susceptible (S), infected (I) and recovered (R), hence the name SIR. Susceptible agents can be infected, infected agents can infect susceptible neighbours and recovered agents are immune to the infection. The agents are geographically situated on a 2d grid and we consider the eight cells around a cell neighbours, and can spread the disease between them.  
 
 We begin the simulation by infecting some proportion of the cells, then at each following time step:
 1. If a cell is infected it recovers with probability $$p_r$$
@@ -23,7 +23,7 @@ A shader implementing is this is shown below. (You may need to press the \|< but
 
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/4cy3Rm?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
-This shader has some extra flair, where I've coloured recovered cells based on a sinusoid of when they were infected.
+This shader has some extra flair, where I've coloured recovered cells based on the sine of when they were infected.
 
 ## Evolution
 
@@ -49,7 +49,7 @@ Here's a little variation below with two values for $$\beta$$, with a $$\beta=1$
 
 Over time each side diverges in terms of structure, with the left side having more noise and more thin maze structure whilst the right side has more smooth structure and larger corridors.
 
-The most interesting thing is that a vertical wall down the middle emerges on every run.
+The most interesting thing is that a vertical wall emerges down the middle.
 
 ## Conclusion
 
