@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Simulating vaccines with shaders"
+title: "Simulating epidemics with shaders"
 date: 2024-04-09 23:59:00 +0000
 tags: shader simulation
 published: true
 ---
 
-# Epidemics and vaccines with shaders
+# Simulating epidemics and vaccines with shaders
 
 I've been spending more and more time into shaders in these last months, and recently decided to recreate part of my Bachelors dissertation using it, for a real-time visual simulation. One part of my dissertation was recreating the results of this [paper](https://www.nature.com/articles/srep05666), which we'll loosely recreate in this post.
 
