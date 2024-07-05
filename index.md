@@ -25,6 +25,10 @@ Click on any of these to play around
 - [Unigram frequency game](interactive/unigram)
 - [Shaders](shaders)
 
-##   Contact me
+### Posts
+
+I have a few posts to checkout at [/posts](/posts)
+
+###  Contact me
 email me at {{site.email}}
 
