@@ -37,7 +37,7 @@ First I needed a database of names and their frequencies so that I coud produce 
 
 I couldn't find many comprehensive lists of names which inncluded frequencies, the best I Found was from the UK census data [here](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesinenglandandwalesfrom1996), which is appropriate to answer our question, but obviously won't be if you don't live in the UK or aren't Lee Mack. 
 
-The census data is split by gender (gender assigned from birth) and by year from 1996-2021, which as of writing will include anyone from the age of 2-28. Not quite the right age range for Lee Mack's partners but it'll do. For those curious, I take look into the data more closely in the [addendum](#addendum).
+The census data is split by gender (gender assigned from birth) and by year from 1996 to 2021, which as of writing will include anyone from the age of 2-28. Not quite the right age range for Lee Mack's partners but it'll do. For those curious, I take look into the data more closely in the [addendum](#addendum).
 
 ### Resulting first letter distribution.
 
