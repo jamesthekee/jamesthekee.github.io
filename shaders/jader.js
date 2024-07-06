@@ -32,12 +32,13 @@ class ShaderViewer {
 
         this.resolutionUniform = this.gl.getUniformLocation(this.program, 'iResolution');
         this.mouseUniform = this.gl.getUniformLocation(this.program, 'iMouse');
-        this.timeUniform = this.gl.getUniformLocation(this.program, 'iTime');
+        this.timeUniform =  this.gl.getUniformLocation(this.program, 'iTime');
 
-        this.mousePosition = { x: 0, y: 0 };
+        this.mousePosition = {x:0,y:0};
 
         this.isMouseOver = false;
-        this.lastTime = 0;
+        this.lastRenderTime = 0;
+        this.accumulatedTime = 0;
 
         // Bind the render method to the class instance
         this.render = this.render.bind(this);
@@ -51,29 +52,41 @@ class ShaderViewer {
     }
 
     start() {
+        this.lastRenderTime = performance.now();
         requestAnimationFrame(this.render);
     }
 
-    render(time) {
-        if (this.isMouseOver || this.lastTime === 0) {
-            this.gl.uniform4f(this.mouseUniform, 
-                this.mousePosition.x, this.mousePosition.y, 
-                this.isMouseOver ? 1 : 0, // z component: 1 if mouse is pressed, 0 otherwise
-                0 // w component: not used in this example
-            );
+    render(currentTime) {
+        const deltaTime = (currentTime - this.lastRenderTime) / 1000; // Convert to seconds
+        this.lastRenderTime = currentTime;
 
-            this.gl.viewport(0, 0, this.canvas.width, this.canvas.height);
-            this.gl.useProgram(this.program);
-            this.gl.uniform2f(this.resolutionUniform, this.canvas.width, this.canvas.height);
-            this.gl.uniform1f(this.timeUniform, time * 0.001);
-            this.gl.drawArrays(this.gl.TRIANGLE_STRIP, 0, 4);
-            this.lastTime = time;
+        if (this.isMouseOver) {
+            this.accumulatedTime += deltaTime;
         }
+
+        this.gl.viewport(0, 0, this.canvas.width, this.canvas.height);
+        this.gl.useProgram(this.program);
+        
+        this.gl.uniform2f(this.resolutionUniform, this.canvas.width, this.canvas.height);
+        this.gl.uniform1f(this.timeUniform, this.accumulatedTime);
+        
+        // Update mouse uniform if you're using it
+        if (this.mouseUniform) {
+            this.gl.uniform4f(
+                this.mouseUniform, 
+                this.mousePosition.x, this.mousePosition.y, 
+                this.isMouseOver ? 1 : 0,
+                0
+            );
+        }
+
+        this.gl.drawArrays(this.gl.TRIANGLE_STRIP, 0, 4);
         requestAnimationFrame(this.render);
     }
 
     setActive(val) {
         this.isMouseOver = val;
+        if(val)this.lastRenderTime = performance.now();
     }
 
     createShader(type, source) {
