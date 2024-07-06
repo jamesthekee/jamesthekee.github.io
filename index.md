@@ -23,7 +23,7 @@ Click on any of these to play around
 - [Pretty gravity sim](interactive/cursorGrav)
 - [Game of the Amazons](interactive/amazons/)
 - [Unigram frequency game](interactive/unigram)
-- [Shaders](shaders)
+- [Shaders](shaders/shaders)
 
 ### Posts
 
