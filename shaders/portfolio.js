@@ -1,22 +1,3 @@
-const fragmentShaderSource = `
-    precision mediump float;
-    
-    uniform vec2 iResolution;
-    uniform float iTime;
-    
-    void mainImage(out vec4 fragColor, in vec2 fragCoord) {
-        vec2 uv = fragCoord/iResolution.xy;
-        vec3 col = 0.5 + 0.5*cos(iTime+uv.xyx+vec3(0,2,4));
-        fragColor = vec4(col,1.0);
-    }
-    
-    void main() {
-        vec4 color;
-        mainImage(color, gl_FragCoord.xy);
-        gl_FragColor = color;
-    }
-`;
-
 const shaderVortex = `
 #define MOD3 vec3(.1031,.11369,.13787)
 #define PI 3.141592654
@@ -433,32 +414,9 @@ void main() {
 
 
 
-const ids = ["shaderCanvas1", "shaderCanvas2", "shaderCanvas3", "shaderCanvas4", "shaderCanvas5", "shaderCanvas6"]
+// const ids = ["shaderCanvas1", "shaderCanvas2", "shaderCanvas3", "shaderCanvas4", "shaderCanvas5", "shaderCanvas6"]
 const shaders = [shaderVortex, shaderMosaic, shaderSmoothMin, shaderSubversion, shaderJulia, shaderCross]
 
-for(let i=0; i<6; i++){
-    let canvas = document.getElementById(ids[i]);
-    let viewer = new ShaderViewer(canvas, shaders[i]);
-    canvas.addEventListener('mouseover', () => viewer.setActive(true));
-    canvas.addEventListener('mouseout', () => viewer.setActive(false));
-    viewer.start();
-}
-
-// const canvas = document.getElementById('shaderCanvas1');
-// const viewer = new ShaderViewer(canvas, shaderVortex);
-// canvas.addEventListener('mouseover', () => viewer.setActive(true));
-// canvas.addEventListener('mouseout', () => viewer.setActive(false));
-// viewer.start();
-
-// const canvas2 = document.getElementById('shaderCanvas2');
-// const viewer2 = new ShaderViewer(canvas2, shaderMosaic);
-// canvas2.addEventListener('mouseover', () => viewer2.setActive(true));
-// canvas2.addEventListener('mouseout', () => viewer2.setActive(false));
-// viewer2.start();
-
-// const canvas3 = document.getElementById('shaderCanvas3');
-// const viewer3 = new ShaderViewer(canvas3, shaderSmoothMin);
-// canvas3.addEventListener('mouseover', () => viewer3.setActive(true));
-// canvas3.addEventListener('mouseout', () => viewer3.setActive(false));
-// viewer3.start();
+for(let i=0; i<6; i++)
+    activateShader(shaders[i],i)
 

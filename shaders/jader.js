@@ -12,13 +12,22 @@ const vertices = new Float32Array([
     -1, 1,
     1, 1]);
 
+
+function activateShader(glsl, x){
+    let id = "shaderCanvas" + (x+1);
+    let canvas = document.getElementById(id);
+    let viewer = new ShaderViewer(canvas, glsl);
+    canvas.addEventListener('mouseover', () => viewer.setActive(true));
+    canvas.addEventListener('mouseout', () => viewer.setActive(false));
+    viewer.start();
+}
+
 class ShaderViewer {
     constructor(canvas, fragmentShaderSource) {
         this.canvas = canvas;
         this.gl = canvas.getContext('webgl');
-        this.fragmentShader = this.createShader(this.gl.FRAGMENT_SHADER, fragmentShaderSource);
-        this.vertexShader = this.createShader(this.gl.VERTEX_SHADER, defaultVertex);
-        this.program = this.createProgram(this.vertexShader, this.fragmentShader);
+        this.program = this.createProgram(this.createShader(this.gl.VERTEX_SHADER, defaultVertex), 
+            this.createShader(this.gl.FRAGMENT_SHADER, fragmentShaderSource));
 
         // Create and bind buffer
         const buffer = this.gl.createBuffer();
@@ -34,11 +43,10 @@ class ShaderViewer {
         this.mouseUniform = this.gl.getUniformLocation(this.program, 'iMouse');
         this.timeUniform =  this.gl.getUniformLocation(this.program, 'iTime');
 
-        this.mousePosition = {x:0,y:0};
-
         this.isMouseOver = false;
         this.lastRenderTime = 0;
         this.accumulatedTime = 0;
+        this.mousePosition = {x:0,y:0};
 
         // Bind the render method to the class instance
         this.render = this.render.bind(this);
