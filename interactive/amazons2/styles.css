@@ -1,0 +1,162 @@
+body {
+    background-color: #ffedd5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#canvasContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-63%, -50%);
+    font-size: 90px;
+    color: white;
+    text-shadow: 5px 5px 1px #000000;
+    pointer-events: none; /* Prevent interaction with the text */
+}
+
+#gameContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#stats {
+    margin-bottom: 5px;
+}
+
+#stats > * {
+    margin-left:  10px;
+    margin-right: 10px;
+    font-style: bold;
+}
+
+#gameBoard {
+    margin: 20px;
+}
+
+.panelLabel{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.panel {
+    background-color: #fecd9d;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+}
+
+#leftPanel {
+    max-width: 20%;
+}
+
+#infoPanel {
+    justify-content: space-between;
+    max-width: 25%;
+}
+
+.button-group {
+    display: flex;
+    width: 100%;
+    margin: 0px 0;
+}
+
+button:disabled {
+    background-color: #d8c8b3 !important; /* Active button background color */
+    color: grey; /* Active button text color */
+}
+
+.button-group button, #controlPanel button {
+    flex: 1;
+    margin: 2px;
+    background-color: white;
+    padding: 10px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    overflow: hidden; /* Ensure contents are cut off if they overflow */
+    text-overflow: ellipsis; /* Add ellipsis to cut off text */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+.button-group button:hover, #controlPanel button:hover {
+    background-color: #ffedd5;
+    color: black;
+}
+
+.button-group button:active, #controlPanel button:active {
+    transform: scale(0.95);
+}
+
+
+#currentTurn {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#moveList {
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 100%
+}
+
+#movesContainer {
+    background-color: #ffedd5;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+#controlPanel {
+    text-align: center;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.move {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.move b{
+    margin-right: 10px;
+}
+
+.whiteMove {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.blackMove {
+    background-color: #a8a8a8;
+    color: #ffffff;
+}
+

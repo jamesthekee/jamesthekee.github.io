@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of the Amazons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Game of the Amazons</h1>
+    <div id="gameContainer">
+        <div id="leftPanel" class="panel">
+            <div class="panelLabel">Start a new game:</div>
+            <div class="button-group">
+                <button id="newGame">Local multi</button>
+                <button id="newAIGame">vs AI</button>
+            </div>
+            <div class="button-group">
+                <button id="size6Button">6x6</button>
+                <button id="size8Button">8x8</button>
+                <button id="size10Button">10x10</button>
+            </div>
+            <div class="button-group">
+                <button id="easyButton">Random</button>
+                <button id="mediumButton">Awful</button>
+                <button id="hardButton">Bruh</button>
+            </div>
+            <div class="button-group">
+                <button id="selectWhite">White</button>
+                <button id="selectBlack">Black</button>
+            </div>
+            <div class="panelLabel">Settings:</div>
+            <div class="button-group">
+                <button id="showMoves">Show moves</button>
+                <button id="showLastMove">Show last move</button>
+            </div>
+        </div>
+
+        <div class="canavasContainer">
+            <canvas id="gameBoard" width="800" height="800"></canvas>
+            <div id="overlay-text"></div>
+        </div>
+        <div id="infoPanel" class="panel">
+            <div id="currentTurn"><b id="turnIndicator">White</b> is <b id="turnType">moving</b></div>
+            <div id="statsL">
+                <span id="score">Score: 1</span>
+                <span id="tileCount">Squares: 1</span>
+            </div>
+            <div id="movesContainer"></div>
+            <div id="controlPanel">
+                <button id="undoButton"><i class="fas fa-undo-alt"></i> Undo</button>
+                <button id="redoButton"><i class="fas fa-redo-alt"></i> Redo</button>
+            </div>
+        </div>
+    </div>
+    <script src="src/util.js"></script>
+    <script src="src/board.js"></script>
+    <script src="src/boardmanager.js"></script>
+    <script src="src/aiboardmanager.js"></script>
+    <script src="src/minimax.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
