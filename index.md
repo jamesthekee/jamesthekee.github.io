@@ -22,6 +22,7 @@ Click on any of these to play around
 - [Particle sim (similar to Particle life)](interactive/quintballs)
 - [Pretty gravity sim](interactive/cursorGrav)
 - [Game of the Amazons](interactive/amazons/)
+- [(Updated) game of the Amazons](interactive/amazons2/)
 - [Unigram frequency game](interactive/unigram)
 - [Shaders](shaders/shaders)
 
