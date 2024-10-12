@@ -1,0 +1,50 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanzi frequency game</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+<div class="question-box">
+    <h2>Which character has a higher frequency?</h2>
+
+    <div class="difficulty-container">
+      <p>Obscurity: </p>
+      <button class="difficulty-button" id="button-obsc1">Low</button>
+      <button class="difficulty-button" id="button-obsc2">Medium</button>
+      <button class="difficulty-button" id="button-obsc3">High</button>
+
+      <p>Difficulty: </p>
+      <button class="difficulty-button" id="button-diff1">Low</button>
+      <button class="difficulty-button" id="button-diff2">Medium</button>
+      <button class="difficulty-button" id="button-diff3">High</button>
+    </div>
+
+    <div class="counter-container">
+      <p id="correct-counter">Correct: 0</p>
+      <p id="wrong-counter">Wrong: 0</p>
+    </div>
+    <div class="button-container">
+      <button class="answer-button" id="button-a">Paris</button>
+      <button class="answer-button" id="button-b">London</button>
+    </div>
+    <div class="last-question">
+      <p>Last question: <span id="answer-feedback"></span></p>
+      <p><span id="word1-display"></span> is <b id="word-relationship-display"></b> frequent than <span id="word2-display"></span></p>
+      
+      <p id="freq-ratio"></p>
+      <span id="freq-display1"></span>  vs   
+      <span id="freq-display2"></span>
+    </div>
+
+    <div class="explainer">
+      <p>These unigram frequencies are sourced from Jun Da, Ph.D., Associate Professor of Linguistics.</p>
+      <p>They are hosted at <a href="https://lingua.mtsu.edu/chinese-computing/statistics/char/search.php">https://lingua.mtsu.edu/chinese-computing/statistics/char/search.php</a></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
