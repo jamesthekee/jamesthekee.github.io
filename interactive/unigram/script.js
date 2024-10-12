@@ -20,7 +20,7 @@ buttonB.disabled = true;
 
 async function fetchData() {
   try {
-    const response = await fetch('https://jamesthekee.github.io/large_unigram.json');
+    const response = await fetch('https://jamesthekee.github.io/assets/data/large_unigram.json');
     data = await response.json();
     data = data["unigrams"];
     buttonA.disabled = false;
