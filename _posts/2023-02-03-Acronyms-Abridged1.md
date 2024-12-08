@@ -98,7 +98,7 @@ def solution(state, k, fld, cur=1):
             next_cur = cur*branch_prob*condition_multiplier
 
             state[i]=1
-            total += recursive(state, k, fld, next_cur)
+            total += solution(state, k, fld, next_cur)
             state[i]=0
             
             if k > 1:
