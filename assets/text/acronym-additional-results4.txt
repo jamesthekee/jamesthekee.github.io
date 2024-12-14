@@ -1,0 +1,239 @@
+k=5
+
+jam: 0.2068
+lam: 0.1878
+mas: 0.1723
+sam: 0.1723
+ale: 0.171
+lea: 0.171
+cam: 0.1689
+mac: 0.1689
+las: 0.1577
+sea: 0.1567
+
+jams: 0.1528
+lame: 0.1481
+male: 0.1481
+meal: 0.1481
+alms: 0.1388
+slam: 0.1388
+same: 0.1381
+seam: 0.1381
+calm: 0.1365
+clam: 0.1365
+
+james: 0.1326
+males: 0.1205
+meals: 0.1205
+salem: 0.1205
+camel: 0.1189
+calms: 0.1114
+clams: 0.1114
+maces: 0.1108
+realm: 0.1072
+laces: 0.1014
+
+camels: 0.1033
+realms: 0.09477
+calmer: 0.09351
+jetsam: 0.09271
+creams: 0.08716
+scream: 0.08716
+schema: 0.08505
+lamest: 0.08422
+metals: 0.08422
+lemmas: 0.08045
+
+calmest: 0.07784
+caramel: 0.07518
+armlets: 0.07143
+marches: 0.07128
+cameras: 0.07109
+hamlets: 0.0697
+armless: 0.06768
+malices: 0.0661
+smaller: 0.06594
+marbles: 0.06559
+
+caramels: 0.07121
+clambers: 0.0638
+scramble: 0.0638
+thermals: 0.06188
+miracles: 0.05942
+reclaims: 0.05942
+majestic: 0.05903
+harmless: 0.05802
+schemata: 0.05558
+mackerel: 0.05453
+
+charmless: 0.05632
+matchless: 0.05202
+classmate: 0.0518
+scrambled: 0.05088
+scrambles: 0.04947
+alchemist: 0.04931
+camelhair: 0.04712
+chemicals: 0.04681
+scrambler: 0.04616
+matchable: 0.04586
+
+
+K=2
+5
+
+
+jam: 0.2068
+lam: 0.1878
+mas: 0.1723
+sam: 0.1723
+ale: 0.171
+lea: 0.171
+cam: 0.1689
+mac: 0.1689
+las: 0.1577
+sea: 0.1567
+
+jams: 0.1528
+lame: 0.1481
+male: 0.1481
+meal: 0.1481
+alms: 0.1388
+slam: 0.1388
+same: 0.1381
+seam: 0.1381
+calm: 0.1365
+clam: 0.1365
+
+james: 0.1326
+males: 0.1205
+meals: 0.1205
+salem: 0.1205
+camel: 0.1189
+calms: 0.1114
+clams: 0.1114
+maces: 0.1108
+realm: 0.1072
+laces: 0.1014
+
+camels: 0.1033
+realms: 0.09477
+calmer: 0.09351
+jetsam: 0.09271
+creams: 0.08716
+scream: 0.08716
+schema: 0.08505
+lamest: 0.08422
+metals: 0.08422
+lemmas: 0.08045
+
+calmest: 0.07784
+caramel: 0.07518
+armlets: 0.07143
+marches: 0.07128
+cameras: 0.07109
+hamlets: 0.0697
+armless: 0.06768
+malices: 0.0661
+smaller: 0.06594
+marbles: 0.06559
+
+caramels: 0.07121
+clambers: 0.0638
+scramble: 0.0638
+thermals: 0.06188
+miracles: 0.05942
+reclaims: 0.05942
+majestic: 0.05903
+harmless: 0.05802
+schemata: 0.05558
+mackerel: 0.05453
+
+charmless: 0.05632
+matchless: 0.05202
+classmate: 0.0518
+scrambled: 0.05088
+scrambles: 0.04947
+alchemist: 0.04931
+camelhair: 0.04712
+chemicals: 0.04681
+scrambler: 0.04616
+matchable: 0.04586
+
+K= 10
+
+jam: 0.558
+lam: 0.533
+mas: 0.5104
+sam: 0.5104
+cam: 0.5049
+mac: 0.5049
+ale: 0.5041
+lea: 0.5041
+las: 0.4839
+sea: 0.4819
+
+jams: 0.52
+lame: 0.5092
+male: 0.5092
+meal: 0.5092
+alms: 0.4967
+slam: 0.4967
+same: 0.4954
+seam: 0.4954
+calm: 0.4933
+clam: 0.4933
+
+james: 0.5145
+males: 0.4915
+meals: 0.4915
+salem: 0.4915
+camel: 0.4893
+calms: 0.4773
+clams: 0.4773
+maces: 0.4761
+realm: 0.4704
+marls: 0.4588
+
+camels: 0.4814
+realms: 0.4691
+jetsam: 0.4679
+calmer: 0.4671
+creams: 0.4545
+scream: 0.4545
+schema: 0.4504
+lamest: 0.447
+metals: 0.447
+harems: 0.433
+
+calmest: 0.4522
+armlets: 0.4406
+marches: 0.4394
+hamlets: 0.4367
+armless: 0.4359
+measles: 0.4257
+marbles: 0.4246
+rambles: 0.4246
+smacker: 0.4237
+matches: 0.4231
+
+clambers: 0.4366
+scramble: 0.4366
+thermals: 0.4351
+majestic: 0.4277
+harmless: 0.427
+miracles: 0.423
+reclaims: 0.423
+mackerel: 0.4161
+caramels: 0.4156
+emeralds: 0.4114
+
+charmless: 0.4306
+matchless: 0.4224
+scrambled: 0.4192
+scrambles: 0.415
+alchemist: 0.4143
+chemicals: 0.4115
+scrambler: 0.4106
+dreamless: 0.4013
+assembler: 0.3985
+majesties: 0.3966

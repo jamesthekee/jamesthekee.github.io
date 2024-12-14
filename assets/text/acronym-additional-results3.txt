@@ -1,0 +1,107 @@
+k=1
+llama:  6.49099e-06
+mamas:  6.37964e-06
+lamas:  5.58468e-06
+lemma:  4.82149e-06
+amass:  4.80491e-06
+james:  4.32673e-06
+alarm:  4.3163e-06
+salsa:  4.20618e-06
+areal:  3.7422e-06
+malls:  3.66655e-06
+
+k=2
+llama:  0.00016349
+mamas:  0.000160663
+lamas:  0.000141433
+lemma:  0.000123338
+amass:  0.000122351
+james:  0.000111072
+alarm:  0.000110144
+salsa:  0.000107707
+areal:  9.60662e-05
+malls:  9.48009e-05
+
+k=3
+llama:  0.00098128
+mamas:  0.000964206
+lamas:  0.000853422
+lemma:  0.000751422
+amass:  0.000742223
+james:  0.000679029
+alarm:  0.000669584
+salsa:  0.000656944
+areal:  0.0005874
+malls:  0.000583597
+
+k=4
+llama:  0.00328202
+mamas:  0.00322465
+lamas:  0.00286923
+lemma:  0.0025496
+amass:  0.00250835
+james:  0.00231175
+alarm:  0.00226762
+salsa:  0.00223188
+areal:  0.00200052
+malls:  0.00200027
+
+k=5
+llama:  0.00798269
+mamas:  0.00784268
+lamas:  0.007014
+lemma:  0.00628742
+amass:  0.00616287
+james:  0.00571969
+alarm:  0.00558299
+salsa:  0.00551169
+malls:  0.0049814
+small:  0.0049814
+
+k=10
+llama:  0.0873432
+mamas:  0.0858184
+lamas:  0.0785483
+lemma:  0.0731045
+amass:  0.0706389
+james:  0.0675335
+salsa:  0.0646548
+alarm:  0.064644
+malls:  0.0605734
+small:  0.0605734
+
+k=20
+llama:  0.436612
+mamas:  0.429735
+lamas:  0.407411
+lemma:  0.397748
+amass:  0.380163
+james:  0.376866
+salsa:  0.360414
+alarm:  0.354502
+small:  0.353331
+malls:  0.353331
+
+k=50
+llama:  0.94604
+mamas:  0.939808
+lemma:  0.936952
+lamas:  0.931495
+james:  0.924438
+amass:  0.917174
+malls:  0.915123
+small:  0.915123
+salem:  0.914386
+males:  0.914386
+
+k=100
+llama:  0.999088
+lemma:  0.998939
+mamas:  0.998534
+lamas:  0.998265
+melee:  0.998222
+james:  0.998158
+malls:  0.99788
+small:  0.99788
+meals:  0.997848
+males:  0.997848
