@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+
+
+    
+    
+
+<html>
+<head>
+    <title>Chinese Character Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <div id="landing-page" class="page active">
+            <h1>Chinese Character Recognition Quiz</h1>
+            <div class="intro-text">
+                Welcome to the Chinese Character Quiz! This quiz will help you assess your knowledge of basic Chinese characters.
+                <br><br>
+                For each character shown:
+                <br>
+                1. Try to recognize the character
+                <br>
+                2. Click "Reveal Meaning" if you want to check
+                <br>
+                3. Select "Know" or "Don't Know" to proceed
+                <br><br>
+                There are 10 characters in total. Your results will be shown at the end.
+            </div>
+            <div class="button-row">
+                <button id="start-quiz">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-page" class="page">
+            <div id="progress">Question 1 of 10</div>
+            
+            <div class="quiz-content">
+                <div class="question">Do you recognize this character?</div>
+                
+                <div class="character" id="character">字</div>
+                
+                <div class="meaning-box" id="meaning">
+                    <!-- Meaning will appear here -->
+                </div>
+                
+                <div class="button-row">
+                    <button id="reveal">Reveal Meaning</button>
+                </div>
+                
+                <div class="button-row">
+                    <button id="know">Know</button>
+                    <button id="dontKnow">Don't Know</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Page -->
+        <div id="results-page" class="page">
+            <h1>Quiz Complete!</h1>
+            <div class="results-stats">
+                <div id="known-count">Characters known: 0</div>
+                <div id="unknown-count">Characters unknown: 0</div>
+                <div id="accuracy">Recognition rate: 0%</div>
+            </div>
+            <div class="button-row">
+                <button id="restart-quiz">Try Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
