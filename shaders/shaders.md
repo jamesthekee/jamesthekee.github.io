@@ -2,7 +2,7 @@
 
 Here are some shaders I've made. Hover over any of the below to view them. 
 
-The source code for each is available from this website's repository and my shadertoy, where these shaders can also be viewed in higher resolution and framerates.
+The source code for each is available from this website's repository and [my shadertoy](https://www.shadertoy.com/profile/numpyhard), where these shaders can also be viewed in higher resolution and framerates.
 
 <script>
 

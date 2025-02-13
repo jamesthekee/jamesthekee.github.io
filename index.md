@@ -19,12 +19,14 @@ Some of my github projects are here:
 
 Click on any of these to play around
 
+- [Shaders](shaders/shaders)
+- [Game of the Amazons](interactive/amazons2/)
 - [Particle sim (similar to Particle life)](interactive/quintballs)
 - [Pretty gravity sim](interactive/cursorGrav)
-- [Game of the Amazons](interactive/amazons/)
-- [(Updated) game of the Amazons](interactive/amazons2/)
-- [Unigram frequency game](interactive/unigram)
-- [Shaders](shaders/shaders)
+- [(Old) Game of the Amazons](interactive/amazons/)
+- [Unigram frequency quiz](interactive/unigram)
+- [Hanzi frequency quiz](interactive/hanzi/)
+
 
 ### Posts
 
