@@ -11,7 +11,7 @@ Here's a list of things I love, made by other people, that you might not know ab
 
 ### Posts & Papers
 - [Compound curse words](https://colinmorris.github.io/blog/compound-curse-words)
-- [Alpha](https://llamasandmystegosaurus.blogspot.com/2017/05/alpha.html)
+- [Algorithmic alliteration with word2vec](https://llamasandmystegosaurus.blogspot.com/2017/05/alpha.html)
 - [How fateful](https://chan.co.za/how-fateful)
 - [On the Viability of Conspiratorial Beliefs](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0147905&type=printable)
 - [Using GPT-4 to measure the passage of time in fiction](https://tedunderwood.com/2023/03/19/using-gpt-4-to-measure-the-passage-of-time-in-fiction/)
@@ -34,5 +34,5 @@ Here's a list of things I love, made by other people, that you might not know ab
 - [Darknet diaries](https://darknetdiaries.com/episode/)#
 
 ## Something inbetween
-- https://distill.pub/
-- https://transformer-circuits.pub/
+- [Distill](https://distill.pub/)
+- [Transformer circuits](https://transformer-circuits.pub/)
