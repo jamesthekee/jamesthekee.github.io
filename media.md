@@ -31,7 +31,7 @@ Here's a list of things I love, made by other people, that you might not know ab
 - [Neel Nanda](https://www.neelnanda.io/)
 - [Explorables](https://www.complexity-explorables.org/explorables/)
 - [Chaoyang trap](https://chaoyang.substack.com/)
-- [Darknet diaries](https://darknetdiaries.com/episode/)#
+- [Darknet diaries](https://darknetdiaries.com/episode/)
 
 ## Something inbetween
 - [Distill](https://distill.pub/)

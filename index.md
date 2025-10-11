@@ -7,7 +7,7 @@ layout: default
 
 ## Welcome to my page
 
-Hello I am James, I'm from the UK and I like creating stuff. I'm interested in <ins>simulations</ins>, <ins>machine learning</ins>, <ins>nlp</ins> and <ins>shaders</ins>. Hopefully I will add some more stuff about that on here in the coming future. 
+Hello I am James, I'm from the UK and I like creating stuff. I'm interested in <ins>simulations</ins>, <ins>machine learning</ins>, <ins>nlp</ins>, <ins>programming languages</ins> & <ins>shaders</ins>. Hopefully I will add some more stuff about that on here in the coming future. 
 
 Some of my github projects are here:
 
