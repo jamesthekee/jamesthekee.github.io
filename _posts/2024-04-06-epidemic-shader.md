@@ -35,7 +35,7 @@ Payoff is determined by the outcome of the agent, if its infected/recovered it w
 
 At the end of each season, each agent will look at a random neighbour and if they have a different strategy will compare their payoffs. An agent A and neighbour B, has a probability $$p_{a\rightarrow b}=\frac{1}{1+exp(-\beta(p_b-p_a))}$$ of swapping from strategy $$a$$ to strategy $$b$$.
 
-With it fully defined, we can now run the simulation and observe the system. I recommend not just watching it with full rapture (like I do) but to poke around with the parameters defined with `#define` and see if you can find anything suprising. 
+With it fully defined, we can now run the simulation and observe the system. I recommend not just watching it with full rapture (like I do) but to poke around with the parameters defined with `#define` and see if you can find anything surprising. 
 
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/XfKGD1?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
