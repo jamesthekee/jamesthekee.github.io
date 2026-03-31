@@ -294,7 +294,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec2 uv = (2.*iResolution.xy-fragCoord)/iResolution.y;
     float t=iTime*.5;
     
-    // Display two over eachother for 3d/chromatic abberation sort of thing.
+    // Display two over eachother for 3d/chromatic aberration sort of thing.
     float r = func(uv,t);
     float g = func(uv+vec2(0.025,0.), t);
     vec3 col = vec3(r, g, g);  
