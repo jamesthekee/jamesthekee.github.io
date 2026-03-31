@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Game of the Amazons</h1>
+    <h1>Game of the Amazons <button id="helpButton" title="Rules & Controls">?</button></h1>
+
+    <div id="helpModal">
+        <div id="helpModalContent">
+            <button id="helpClose">&times;</button>
+            <h2>Rules & Controls</h2>
+            <h3>How to Play</h3>
+            <p>Game of the Amazons is a two-player strategy game played on a grid. Each player controls 2-4 Amazons
+                depending on the board size .</p>
+            <ol>
+                <li>Players take alternating turns, each turn involves moving an amazon and shooting an arrow.</li>
+                <li><b>Move</b> an Amazon like a chess queen (any distance in 8 directions).</li>
+                <li><b>Shoot an arrow</b> from your Amazon's new position - also like a queen move.</li>
+                <li>Arrows block squares permanently for the rest of the game. You cannot move or shoot through an
+                    arrow.</li>
+                <li>The player who cannot move loses.</li>
+            </ol>
+            <h3>Controls</h3>
+            <ul>
+                <li><b>Click</b> an Amazon to select it, then click a square to move.</li>
+                <li>After moving, <b>click a square</b> to shoot your arrow.</li>
+                <li><b>Right-click</b> to undo the current partial move.</li>
+                <li><b>Undo / Redo</b> buttons step through full moves.</li>
+            </ul>
+            <h3>Settings</h3>
+            <ul>
+                <li><b>Show moves</b> — highlights valid squares for the selected Amazon.</li>
+                <li><b>Show last move</b> — draws an arrow showing the previous move.</li>
+            </ul>
+        </div>
+    </div>
     <div id="gameContainer">
         <div id="leftPanel" class="panel">
-            <div class="panelLabel">Start a new game:</div>
+            <div class="panelLabel">Game options:</div>
             <div class="button-group">
-                <button id="newGame">Local multi</button>
-                <button id="newAIGame">vs AI</button>
+                <button id="humanGameButton">Local multi</button>
+                <button id="AIGameButton">vs AI</button>
+                <button id="AIvsAIButton" style="display:none">AI vs AI</button>
             </div>
             <div class="button-group">
                 <button id="size6Button">6x6</button>
@@ -23,18 +56,58 @@
             </div>
             <div class="button-group">
                 <button id="easyButton">Random</button>
-                <button id="mediumButton">Awful</button>
-                <button id="hardButton">Bruh</button>
+                <button id="mediumButton">Competent</button>
+                <button id="hardButton">Difficult</button>
             </div>
             <div class="button-group">
                 <button id="selectWhite">White</button>
                 <button id="selectBlack">Black</button>
+            </div>
+            <div class="button-group big-button">
+                <button id="startGame">Start game</button>
             </div>
             <div class="panelLabel">Settings:</div>
             <div class="button-group">
                 <button id="showMoves">Show moves</button>
                 <button id="showLastMove">Show last move</button>
             </div>
+            <div class="button-group">
+                <button id="showTerritory">Show territory</button>
+            </div>
+            <div class="button-group">
+                <button id="showAdvancedOptions">Show advanced options</button>
+            </div>
+            <div id="advancedOptions" style="display:none">
+                <div class="panelLabel">AI options:</div>
+                <div class="button-group">
+                    <button id="evalTerritory">Territory</button>
+                    <button id="evalMobility">Mobility</button>
+                    <button id="evalRandom">Random</button>
+                </div>
+                <div class="ai-option-row">
+                    <label>Depth</label>
+                    <input type="number" id="aiDepthInput" value="2" min="1" max="5">
+                </div>
+                <div class="ai-option-row">
+                    <label>Branch lim</label>
+                    <input type="number" id="aiBranchLimInput" value="75" min="2" max="10000">
+                </div>
+                <div class="button-group">
+                    <button id="aiHint">AI hint</button>
+                </div>
+            </div>
+            <div class="panelLabel">Game file:</div>
+            <div class="button-group">
+                <button id="exportButton">Export</button>
+                <button id="importButton">Import</button>
+            </div>
+            <div class="panelLabel debug">Debug:</div>
+
+            <div class="button-group debug">
+                <button id="setupboard">setupboard</button>
+                <button id="debugButton2">one amazon</button>
+            </div>
+
         </div>
 
         <div class="canavasContainer">
@@ -44,8 +117,8 @@
         <div id="infoPanel" class="panel">
             <div id="currentTurn"><b id="turnIndicator">White</b> is <b id="turnType">moving</b></div>
             <div id="statsL">
-                <span id="score">Score: 1</span>
-                <span id="tileCount">Squares: 1</span>
+                <span class="statsline" id="score">Score: 1</span>
+                <span class="statsline" id="tileCount">Squares: 1</span>
             </div>
             <div id="movesContainer"></div>
             <div id="controlPanel">
@@ -54,11 +127,12 @@
             </div>
         </div>
     </div>
-    <script src="src/util.js"></script>
+<script src="src/util.js"></script>
     <script src="src/board.js"></script>
     <script src="src/boardmanager.js"></script>
     <script src="src/aiboardmanager.js"></script>
     <script src="src/minimax.js"></script>
     <script src="src/script.js"></script>
 </body>
+
 </html>
